@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+<div class="bg"></div>
+<div class="container">
+    <div class="section">
+        <h3>General</h3>
+        <button class="button" id="open" onclick="fetch(window.location.href + 'open')">Open</button>
+        <button class="button" id="close" onclick="fetch(window.location.href + 'close')">Close</button>
+    </div>
+    <div class="section">
+        <h3>Schedule</h3>
+        <div class="list-item">
+            <h3 class="no-wrap time"><span class="time-icon">☼</span>9:00</h3>
+            <h3 class="no-wrap state">open <span><button class="icon-button" style="color: orangered">X</button></span></h3>
+        </div>
+        <div class="list-item">
+            <h3 class="no-wrap time"><span class="time-icon">☾</span>19:00</h3>
+            <h3 class="no-wrap state">close <span><button class="icon-button" style="color: orangered">X</button></span></h3>
+        </div>
+        <button class="button" id="add-schedule" onclick="fetch(window.location.href + 'open')">Add</button>
+    </div>
+</div>
+</body>
+</html>

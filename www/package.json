@@ -1,0 +1,10 @@
+{
+  "name": "www",
+  "scripts": {
+    "build": "rm -rf ../data/* && esbuild ./src/index.js --bundle --format=esm --outdir=../data --minify && npm run static",
+    "static": "cp ./src/index.html ../data/ && cp ./src/style.css ../data/ && cp ./favicons/* ../data/"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.11"
+  }
+}
